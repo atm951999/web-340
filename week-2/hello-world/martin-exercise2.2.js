@@ -9,20 +9,28 @@
 ;===========================================
 */
 
+// Create express variable.
 var express = require('express');
+
+// Create http variable.
 var http = require('http');
 
+// Create app variable.
 var app = express();
+
 
 app.use(function(req, res)
 {
+    // Output string to console.
     console.log('In comes a request to: %s', req.url);
 
     res.end('Hello World\n');
 })
 
+// Create server on port 8080.
 http.createServer(app).listen(8080, function()
-{
+{   
+    // Output string to console.
     console.log('Application started on port %s', 8080);
 });
     
