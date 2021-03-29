@@ -1,3 +1,14 @@
+
+/*
+============================================
+; Title: Assignment 2.2
+; Author: Professor Cross
+; Date: 28 March 2021
+; Modified By: Angela Martin
+; Description: Node.js - Exercise 2.2 Hello World with Express
+;===========================================
+*/
+
 var express = require('express');
 var http = require('http');
 
