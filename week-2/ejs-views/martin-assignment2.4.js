@@ -20,12 +20,13 @@ var path = require("path");
 // Create app variable.
 var app = express();
 
-//Tell Express the views are in the 'views' directory.
+// Tell Express the views are in the 'views' directory.
 app.set("views", path.resolve(__dirname, "views"));  
 
-//Tell Express to use EJS view engine.
+// Tell Express to use EJS view engine.
 app.set("view engine", "ejs");  
 
+// Route
 app.get("/", function(request, response){
     // Render index file.
     response.render("index",{
