@@ -1,0 +1,52 @@
+<!--
+    Title: index.ejs
+    Author: Angela Martin
+    Date: 04/04/2021
+    Description: Assignment 3.2 index.ejs file.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Document Header information. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Link to Bootstrap 5 CDN. -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <title>Node.js - Assignment 2.4</title>
+  </head>
+  <body class="text-danger">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+
+      <!-- Unordered list -->
+      <ul class="navbar-nav">
+
+        <!-- List items - links -->
+        <li class="nav-item active">
+          <a href="#" class="nav-link text-white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container" role="main">
+      <br /><br />
+      
+      <h2 style="text-align: center;"><%= message %></h2>
+    </div>
+  </body>
+</html>

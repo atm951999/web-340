@@ -1,0 +1,24 @@
+{
+
+    "firstName": "Angie",
+
+    "lastName": "Martin",
+
+    "email": "amartin3@woh.rr.com",
+
+    "address": "13865 State Route 122",
+
+    "city": "Somerville",
+
+    "state": "Ohio",
+
+    "zip": "45064",
+
+    "dependencies": {
+
+        "express": "^4.17.1"
+
+    }
+
+}
+

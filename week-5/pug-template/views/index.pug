@@ -1,0 +1,49 @@
+//-
+    ============================================
+    ; Title: Assignment 5.3 index.pug
+    ; Author: Professor Cross
+    ; Date: 16 April 2021
+    ; Modified By: Angela Martin
+    ; Description: This program demonstrates the 
+    ; use of Node.js with Express and Pug.
+    ;===========================================
+
+
+html
+    head
+        title Exercise 5.3 Pug Template Example
+
+        // Link to BootStrap CDN
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css')
+    body
+
+        // Navigation - navbar with bootstrap styling.
+        nav.navbar.navbar-dark.bg-dark.navbar-expand-sm
+
+            // Unordered list
+            ul.navbar-nav
+
+                // List items
+                li.nav-item
+                    a.nav-link(href='#') Home
+                li.nav-item
+                    a.nav-link(href='#') About
+                li.nav-item 
+                    a.nav-link(href='#') Contact Us 
+        br
+        br
+
+        // Create container
+        div.container 
+
+            //Create row
+            div.row 
+
+                // Create column
+                div.col-md-12 
+
+                    // h2 header
+                    h2 Exercise 5.3 - Pug Templates
+
+                    // output message styled with bootstrap 
+                    p.alert.alert-success=message
