@@ -1,0 +1,101 @@
+/**
+    Title: style.css
+    Author: Angela Martin
+    Date: 04/28/2021
+    Description: Styling for WEB 340 Assignment 6.4 index.ejs file.
+*/
+
+/** Set background color. */
+body {
+    background-color: #CCB495;
+}
+
+/** Styling for Main heading. */
+.header {
+    position: relative;
+    text-align: center;
+    color: #c22700;
+    font-family: "Merienda";
+    font-size: 120px;    
+    font-weight: 700;
+}
+
+/** Styling for header image. */
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+/** Center main heading. */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/** Set container display. */
+.container {
+    display: flex;
+}
+
+/** Set carousel width. */
+.carousel {
+    width: 100%;
+}
+
+/** Set navbar color. */
+.navbar {      
+    background-color: black;    
+}
+
+/** Set navbar link text color. */
+.nav-link {
+    color: white;   
+}
+
+/** Styling for right aside. */
+.right-aside {
+    text-align: center;
+    padding-top: 30px;
+}
+
+/** Styling for left aside. */
+.left-aside {
+    text-align: center;
+    padding-top: 30px;    
+}
+
+/** Styling for both aside images. */
+.aside {
+    border-radius: 30%;    
+    width: 200px;
+    height: auto;
+    text-align: center;
+}
+
+/** Styling for aside headings. */
+h1 {
+    color: #c22700;
+    font-family: "Permanent Marker";
+    font-size: 56px;
+    text-align: center;
+}
+
+/** Styling for footer. */
+.footer {    
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    vertical-align: middle;
+}
+
+/** Styling for footer text. */
+h3 {
+    padding-top: 18px;
+    font-family: "Merienda";
+    text-align: center;    
+    font-size: 14px;
+    color: white;
+}
+
