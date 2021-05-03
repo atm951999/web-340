@@ -21,6 +21,30 @@ var path = require("path");
 // Create logger variable.
 var logger = require("morgan");
 
+var bodyParser = require('body-parser');
+
+var mongoose = require('mongoose');
+
+var Employee = require("./models/employee");
+
+var mongoDB = "mongodb+srv://admin:admin@buwebdev-cluster-1.o1b9i.mongodb.net/test"
+
+mongoose.connect(mongoDB, {
+
+});
+
+mongoose.Promise = global.Promise;
+
+var db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "MongoDB connection error: "));
+
+db.once("open", function() {
+
+    console.log("Application connected to MongoDB instance");
+
+});
+
 // Create app variable.
 var app = express();
 
