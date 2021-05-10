@@ -5,80 +5,101 @@
     Description: Assignment 6.4 index.ejs file.
 -->
 
+<!DOCTYPE html>
+
+<html lang="en">
+
 <!-- Include header module. -->
 <%- include('header'); -%>
+<body>
+    <div class="header">
 
-<!-- Include navbar module. -->
-<%- include('navbar'); -%>
+            <!-- Header image. -->
+            <img alt="Header" id="winerack" src="../images/ems-header2.jpg">
 
-<!-- Create container for main. -->
-<div class="container row col-12">
-
-    <!-- Create container for left aside. -->
-    <div class="left-aside col-2">
-
-        <!-- Heading for left aside. -->
-        <h1>Upcoming<br>
-            Wine<br>
-            Tastings</h1>
+            <!-- Heading. -->
+            <div class="centered">Cork & Bottle</div>                    
         
-        <!-- Images for left aside. -->
-        <div class="left-aside">
-            <img src="../images/taste1.jpg" class="aside" alt="taste1">
-        </div>
-
-        <div class="left-aside">
-            <img src="../images/taste2.jpg" class="aside" alt="taste2">
-        </div>
-
-        <div class="left-aside">
-            <img src="../images/taste3.jpg" class="aside" alt="taste3">
-        </div>        
     </div>
-    
-    <!-- Carousel -->
-    <div id="carouselLandingPage" class="carousel slide carousel-fade col-8" data-bs-ride="carousel">
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="../images/sunset.jpg" class="d-block w-100" alt="sunset">
-        </div>
-        <div class="carousel-item">
-            <img src="../images/valley.jpg" class="d-block w-100" alt="wine">
-        </div>
-        <div class="carousel-item">
-            <img src="../images/harvest.jpg" class="d-block w-100" alt="harvest">
-        </div>
-        <div class="carousel-item">
-            <img src="../images/sunlight.jpg" class="d-block w-100" alt="harvest">
-        </div>
-        <div class="carousel-item">
-            <img src="../images/arbor.jpg" class="d-block w-100" alt="harvest">
-        </div>
-        </div>
-    </div>
-    
-    <!-- Create container for right aside -->
-    <div class="right-aside col-2">
 
-        <!-- Heading for right aside. -->
-        <h1>Wines<br>
-            Of the<br>
-            Week<br></h1>
+
+
+    <!-- Include navbar module. -->
+    <%- include('navbar'); -%>
+
+    <!-- Create container for main. -->
+    <div class="container row col-12">
+
+        <!-- Create container for left aside. -->
+        <div class="left-aside col-2">
+
+            <!-- Heading for left aside. -->
+            <h1>Upcoming<br>
+                Wine<br>
+                Tastings</h1>
+            
+            <!-- Images for left aside. -->
+            <div class="left-aside">
+                <img src="../images/taste1.jpg" class="aside" alt="taste1">
+            </div>
+
+            <div class="left-aside">
+                <img src="../images/taste2.jpg" class="aside" alt="taste2">
+            </div>
+
+            <div class="left-aside">
+                <img src="../images/taste3.jpg" class="aside" alt="taste3">
+            </div>        
+        </div>
         
-        <!-- Images for right aside. -->
-        <div class="right-aside">
-            <img src="../images/display1.jpg" class="aside" alt="bottle of wine">
+        <!-- Carousel -->
+        <div id="carouselLandingPage" class="carousel slide carousel-fade col-8" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/sunset.jpg" class="d-block w-100" alt="sunset">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/valley.jpg" class="d-block w-100" alt="wine">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/harvest.jpg" class="d-block w-100" alt="harvest">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/sunlight.jpg" class="d-block w-100" alt="harvest">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/arbor.jpg" class="d-block w-100" alt="harvest">
+            </div>
+            </div>
         </div>
+        
+        <!-- Create container for right aside -->
+        <div class="right-aside col-2">
 
-        <div class="right-aside">
-            <img src="../images/display2.jpg" class="aside" alt="bottle of wine2">
-        </div>
+            <!-- Heading for right aside. -->
+            <h1>Wines<br>
+                Of the<br>
+                Week<br></h1>
+            
+            <!-- Images for right aside. -->
+            <div class="right-aside">
+                <img src="../images/display1.jpg" class="aside" alt="bottle of wine">
+            </div>
 
-        <div class="right-aside">
-            <img src="../images/display3.jpg" class="aside" alt="bottle of wine3">
-        </div>
-    </div>    
-</div>
+            <div class="right-aside">
+                <img src="../images/display2.jpg" class="aside" alt="bottle of wine2">
+            </div>
 
+            <div class="right-aside">
+                <img src="../images/display3.jpg" class="aside" alt="bottle of wine3">
+            </div>
+        </div>    
+    </div>
+
+    
+</body>
 <!-- Include footer module. -->
 <%- include('footer'); -%>
+
+
+</html>
