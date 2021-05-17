@@ -1,0 +1,38 @@
+<!--
+    Title: view.ejs
+    Author: Angela Martin
+    Date: 05/16/2021
+    Description: ems view.ejs file.
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Include header module. -->
+<%- include('header'); -%>
+
+<body>
+
+    <!-- Include navbar module. -->
+    <%- include('navbar'); -%>
+
+    <!-- Create list. -->
+    <div role="main" class="container" style="width: 50%;">
+        <br/><br/>
+        <h2>-- Employee Record --</h2>
+        <div>
+            <div class="form-group">                
+                <label for="txtFirstName">First Name:</label>
+                <input type="text" class="form-control" id="txtFirstName" value="<%= employee[0].firstName %>" name="txtFirstName" /><br>
+                <label for="txtLastName">Last Name:</label>
+                <input type="text" class="form-control" id="txtLastName" value="<%= employee[0].lastName %>" name="txtLastName" />
+            </div>
+        </div>
+        <br>
+        <a href="/list">Return to Employees</a>
+    </div>
+        
+</body>
+</html>
+    

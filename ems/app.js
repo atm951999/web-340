@@ -74,6 +74,8 @@ app.use(express.static(publicDir));
 // Tell Express to use EJS view engine.
 app.set("view engine", "ejs");
 
+app.set("port", process.env.PORT || 8080)
+
 // Use statements.
 app.use(logger("short"));
 
@@ -127,7 +129,7 @@ app.post("/process", function(request, response) {
     var firstName = request.body.firstName;
     var lastName = request.body.lastName;
     
-    // create a fruit model
+    // Create an employee model
     var employee = new Employee({
         firstName: firstName,
         lastName: lastName
@@ -140,6 +142,8 @@ app.post("/process", function(request, response) {
     response.redirect("/");
 });
 
+
+// Get statements
 app.get("/list", function(request, response) {
     Employee.find({}, function(error, employees) {
         if (error) throw error;
@@ -149,9 +153,26 @@ app.get("/list", function(request, response) {
         });
     });
 });
-// Create server on port 8080.
-http.createServer(app).listen(8080, function() {
 
-    console.log("Application started on port 8080!");
+app.get("/view/:queryName", function (request, response) {
+    var queryName = request.params.queryName;
+    Employee.find({'firstName': queryName}, function(error, employees) {
+        if (error) throw error;
+        if (employees.length > 0) {
+            response.render("view", {
+                title: "Employee Record",
+                employee: employees
+            })
+        }
+        else {
+            response.redirect("/list")
+        }
+    });
+});
+
+// Create server on port 8080.
+http.createServer(app).listen(app.get("port"), function() {
+
+    console.log("Application started on port" + app.get("port"))
 
 });
